@@ -5,7 +5,7 @@ import { AuthenticateDeliverymanController } from "../modules/account/controller
 const authenticateRoutes = Router();
 
 const authenticateClientController = new AuthenticateClientController();
-authenticateRoutes.post("/clients/authenticate", authenticateClientController.handle);
+authenticateRoutes.post("/client/authenticate", authenticateClientController.handle);
 
 const authenticateDeliverymanController = new AuthenticateDeliverymanController();
 authenticateRoutes.post("/deliveryman/authenticate", authenticateDeliverymanController.handle);
