@@ -1,4 +1,4 @@
-import { prisma } from "@infra/prisma/prisma-client";
+import { prisma } from "../../../infra/prisma/prisma-client";
 import { hash } from "bcrypt";
 
 export class CreateClientUseCase {

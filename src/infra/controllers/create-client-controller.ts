@@ -1,4 +1,4 @@
-import { CreateClientUseCase } from "@domains/clients/usecases/create-client-use-case";
+import { CreateClientUseCase } from "../../domains/clients/usecases/create-client-use-case";
 import { Request, Response } from "express";
 
 export class CreateClientController {

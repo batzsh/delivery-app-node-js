@@ -3,13 +3,8 @@
     "skipLibCheck": true,
     "strict": true,
     "noEmit": true,
-    "esModuleInterop": true,
-    "baseUrl": ".",
-    "paths": {
-      "@infra/*": ["src/infra/*"],
-      "@domains/*": ["src/domains/*"],
-      "@tests/*": ["tests/*"]
-    }
+    "esModuleInterop": true
   },
-  "include": ["src/**/*", "server.ts"]
+  "include": ["src/**/*.ts", "tests/**/*.ts", "server.ts", "routes.ts"],
+  "exclude": ["node_modules/**/*"]
 }
