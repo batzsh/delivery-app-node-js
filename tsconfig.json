@@ -2,8 +2,14 @@
   "compilerOptions": {
     "skipLibCheck": true,
     "strict": true,
-    "rootDir": "src",
-    "noEmit": true
+    "noEmit": true,
+    "esModuleInterop": true,
+    "baseUrl": ".",
+    "paths": {
+      "@infra/*": ["src/infra/*"],
+      "@domains/*": ["src/domains/*"],
+      "@tests/*": ["tests/*"]
+    }
   },
-  "include": ["src/**/*"]
+  "include": ["src/**/*", "server.ts"]
 }
