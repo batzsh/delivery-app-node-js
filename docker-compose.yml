@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  postgres:
+    image: postgres:13.4 # LTS
+    container_name: pg-delivery-app
+    environment:
+      - POSTGRES_PASSWORD=docker
+    ports:
+      - 5432:5432
+    volumes:
+      - delivery-app-postgres-data:/var/lib/postgresql/data
+volumes:
+  delivery-app-postgres-data:
