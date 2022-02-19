@@ -1,6 +1,6 @@
 {
   "name": "delivery-app-node-js",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "index.js",
   "license": "MIT",
   "repository": {
@@ -12,6 +12,12 @@
     "name": "Henrique Balmant"
   },
   "homepage": "https://github.com/henbalmant/delivery-app-node-js",
+  "prisma": {
+    "schema": "src/infra/prisma/schema.prisma"
+  },
+  "scripts": {
+    "dev": "ts-node-dev --exit-child --transpile-only --ignore-watch node_modules ./server.ts"
+  },
   "dependencies": {
     "@prisma/client": "^3.9.2",
     "bcrypt": "^5.0.1",
