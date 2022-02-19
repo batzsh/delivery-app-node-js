@@ -7,6 +7,6 @@ const routes = Router();
 
 routes.use("/clients", clientsRoutes);
 routes.use("/deliveryman", deliverymanRoutes);
-routes.use("/authenticate", authenticateRoutes);
+routes.use("/", authenticateRoutes);
 
 export default routes;
