@@ -5,17 +5,13 @@
 </h1>
 
 <h3 align="center">
-    🙋‍♂️ Uma API para registrar clientes, entregadores e solicitações de delivery.
+    🙋‍♂️ An API to register clients, deliverymen and delivery requests.
 </h3>
 
 <p align="center">
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/henbalmant/delivery-app-node-js?color=%2304D361">
 
   <img alt="Repository size" src="https://img.shields.io/github/repo-size/henbalmant/delivery-app-node-js">
-
-  <a href="https://www.twitter.com/tgmarinho/">
-    <img alt="Siga no Twitter" src="https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2Ftgmarinho%2FREADME-ecoleta">
-  </a>
   
   <a href="https://github.com/henbalmant/delivery-app-node-js/commits/master">
     <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/henbalmant/delivery-app-node-js">
@@ -27,7 +23,7 @@
   </a>
 
   <a href="https://batcave.dev.br">
-    <img alt="Feito por henbalmant" src="https://img.shields.io/badge/feito%20por-henbalmant-%237519C1">
+    <img alt="Made by henbalmant" src="https://img.shields.io/badge/made%20by-henbalmant-%237519C1">
   </a>
   
   <a href="https://batcave.dev.br/">
@@ -38,81 +34,81 @@
 </p>
 
 <h4 align="center">
-	🚧   Concluído 🚀 🚧
+	Status: Done 🚀
 </h4>
 
-Tabela de conteúdos
+Summary
 =================
 <!--ts-->
-   * [Sobre o projeto](#-sobre-o-projeto)
-   * [Funcionalidades](#-funcionalidades)
-   * [Como executar o projeto](#-como-executar-o-projeto)
-     * [Pré-requisitos](#pré-requisitos)
-     * [Rodando o Backend (servidor)](#user-content--rodando-o-backend-servidor)
-   * [Tecnologias](#-tecnologias)
-   * [Como contribuir no projeto](#-como-contribuir-no-projeto)
-   * [Autor](#-autor)
-   * [Licença](#user-content--licença)
+   * [About](#-about)
+   * [Features](#%EF%B8%8F-features)
+   * [How to execute](#-how-to-run-this-project)
+     * [Requirements](#requirements)
+     * [Running the backend server](#-running-the-backend-server)
+   * [Tech Stack](#-tech-stack)
+   * [How to contribute](#-how-to-contribute)
+   * [Author](#-author)
+   * [License](#-license)
 <!--te-->
 
 
-## 💻 Sobre o projeto
+## 💻 About
 
-🚚 Delivery App - é uma aplicação backend que disponibiliza uma API para cadastro, autenticação e gerenciamento de pedidos.
+🚚 Delivery App - is a backend application that serves an API to register, authenticate and manage delivery requests.
 
-Projeto desenvolvido dentro do **Ignite** oferecido pela [Rocketseat](https://rocketseat.com.br/).
+Project developed inside **Ignite** offered by [Rocketseat](https://rocketseat.com.br/).
 
 ---
 
-## ⚙️ Funcionalidades
+## ⚙️ Features
 
-- [x] Clientes e entregadores podem se cadastrar informando:
-  - [x] nome de usuário
-  - [x] senha
+- [x] Clients and deliverymen can register themselves providing:
+  - [x] username
+  - [x] password
 
-- [x] Os clientes, após se autenticarem, podem:
-  - [x] visualizar todas as entregas que solicitaram
+- [x] Authenticated clients can:
+  - [x] find all deliveries requested by them
   
-- [x] Os entregadores, após se autenticarem, podem:
-  - [x] visualizar todas as entregas disponíveis para realizar
-  - [x] aceitar uma entrega disponível
-  - [x] finalizar uma entrega
-  - [x] visualizar todas as entregas que realizaram
+- [x] Authenticated deliverymen can:
+  - [x] find all available deliveries
+  - [x] accept an available delivery
+  - [x] finish a delivery
+  - [x] find all deliveries accepted/finished by them
 
 ---
 
-## 🚀 Como executar o projeto
+## 🚀 How to run this project
 
-Este projeto possui apenas a aplicação backend.
+This project has only a backend application. projeto possui apenas a aplicação backend.
 
-💡 Todas as requisições precisam que o Backend esteja sendo executado para funcionar.
+💡 All requests needs the backend server up to work.
 
-### Pré-requisitos
+### Requirements
 
-Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
+Before you begin, you will need to have the following tools installed on your machine:
 [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/), [Yarn](https://yarnpkg.com/getting-started/install) & [docker-compose](https://docs.docker.com/compose/install/)
-Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
+Besides that, is good to have an editor to visualize and navigate trough the code like [VSCode](https://code.visualstudio.com/)
 
-#### 🎲 Rodando o Backend (servidor)
+#### 🎲 Running the backend server
 
 ```bash
 
-# Clone este repositório
+# Clone this repository
 $ git clone git@github.com:henbalmant/delivery-app-node-js.git
 
-# Acesse a pasta do projeto no terminal/cmd
+# Access the project folder with your terminal/cmd
 $ cd delivery-app-node-js
 
-# Instale as dependências
+# Install all dependencies
 $ yarn install
 
-# Execute o script do docker-compose (em alguns casos, você precisará executar com sudo)
+# Run docker-compose (sometimes you will need run with sudo)
 $ docker-compose up -d
 
-# Execute a aplicação em modo de desenvolvimento
+# Starts the development application
 $ yarn dev
 
-# O servidor inciará na porta:3000 - acesse http://localhost:3000 
+# The server will start on port:3000 - access http://localhost:3000 
 
 ```
 <p align="center">
@@ -122,9 +118,9 @@ $ yarn dev
 
 ---
 
-## 🛠 Tecnologias
+## 🛠 Tech Stack
 
-As seguintes ferramentas foram usadas na construção do projeto:
+The following tools were used in the construction of the project:
 
 #### [](https://github.com/tgmarinho/Ecoleta#server-nodejs--typescript)**Backend**  ([NodeJS](https://nodejs.org/en/)  +  [TypeScript](https://www.typescriptlang.org/))
 
@@ -135,28 +131,28 @@ As seguintes ferramentas foram usadas na construção do projeto:
 -   **[json-web-token](https://www.npmjs.com/package/jsonwebtoken)**
 -   **[ts-node](https://github.com/TypeStrong/ts-node)**
 
-> Veja o arquivo  [package.json](https://github.com/henbalmant/delivery-app-node-js/blob/master/package.json)
+> See  [package.json](https://github.com/henbalmant/delivery-app-node-js/blob/master/package.json)
 
-#### [](https://github.com/tgmarinho/Ecoleta#utilit%C3%A1rios)**Utilitários**
+#### [](https://github.com/tgmarinho/Ecoleta#utilit%C3%A1rios)**Utilities**
 
 -   Editor:  **[Visual Studio Code](https://code.visualstudio.com/)**
 -   Markdown:  **[StackEdit](https://stackedit.io/)**,  **[Markdown Emoji](https://gist.github.com/rxaviers/7360908)**
 -   Commit Conventional:  **[Commitlint](https://github.com/conventional-changelog/commitlint)**
--   Teste de API:  **[Insomnia](https://insomnia.rest/)**
+-   API Testing:  **[Insomnia](https://insomnia.rest/)**
 
 ---
 
-## 💪 Como contribuir no projeto
+## 💪 How to contribute
 
-1. Faça um **fork** do projeto.
-2. Crie uma nova branch com as suas alterações: `git checkout -b my-feature`
-3. Salve as alterações e crie uma mensagem de commit contando o que você fez: `git commit -m "feature: My new feature"`
-4. Envie as suas alterações: `git push origin my-feature`
-> Caso tenha alguma dúvida confira este [guia de como contribuir no GitHub](./CONTRIBUTING.md)
+1. **Fork** the project.
+2. Create a new branch with your changes: `git checkout -b my-feature`
+3. Save your changes and create a commit message telling you what you did: `git commit -m "feature: My new feature"`
+4. Submit your changes: `git push origin my-feature`
+> If you have any questions check this guide on [how to contribute](./CONTRIBUTING.md)
 
 ---
 
-## 🦸 Autor
+## 🦸 Author
 
 <a href="https://batcave.dev.br/author/henbalmant/">
  <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/20211646?v=4" width="100px;" alt=""/>
@@ -169,8 +165,8 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ---
 
-## 📝 Licença
+## 📝 License
 
-Este projeto esta sob a licença [MIT](./LICENSE).
+This project is under the license [MIT](./LICENSE).
 
-Feito com ❤️ por Henrique Balmant 👋🏽 [Entre em contato!](https://www.linkedin.com/in/henrique-balmant/)
+Made with ❤️ by Henrique Balmant 👋🏽 [Get in touch!](https://www.linkedin.com/in/henrique-balmant/)
