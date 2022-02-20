@@ -1,6 +1,6 @@
 {
   "name": "delivery-app-node-js",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "repository": {
