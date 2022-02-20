@@ -13,7 +13,7 @@ export const ensureAuthenticateClient = async (request: Request, response: Respo
   const [, token] = authHeader.split(" ");
 
   try {
-    const { sub } = verify(token, "ec0e2603172c73a8b644bb9456c1ff6e") as Payload;
+    const { sub } = verify(token, process.env.CLIENT_SECRET!) as Payload;
 
     request.id_client = sub;
 

@@ -13,7 +13,7 @@ export const ensureAuthenticateDeliveryman = async (request: Request, response: 
   const [, token] = authHeader.split(" ");
 
   try {
-    const { sub } = verify(token, "8ee60a2e00c90d7e00d5069188dc115b") as Payload;
+    const { sub } = verify(token, process.env.DELIVERYMAN_SECRET!) as Payload;
 
     request.id_deliveryman = sub;
 
