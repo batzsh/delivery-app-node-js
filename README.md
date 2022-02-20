@@ -79,7 +79,7 @@ Project developed inside **Ignite** offered by [Rocketseat](https://rocketseat.c
 
 ## 🚀 How to run this project
 
-This project has only a backend application. projeto possui apenas a aplicação backend.
+This project has only a backend application.
 
 💡 All requests needs the backend server up to work.
 
